@@ -241,7 +241,6 @@ float:left;
 }
 
 div#menu,div#footer {
-overflow:hidden;
 clear:both;
 padding:0 44px;
 }
@@ -273,4 +272,8 @@ width:50%;
 div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
 margin:0;
 padding:0;
+}
+
+.clearfix {
+clear:both;
 }

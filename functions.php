@@ -21,7 +21,7 @@ function sandbox_globalnav() {
 		'container' => false,
 		'echo' => false
 	));
-	$menu = '<div id="menu">' . $menu . "</div>\n";
+	$menu = '<div id="menu">' . $menu . "<div class=\"clearfix\"></div></div>\n";
 	echo apply_filters( 'globalnav_menu', $menu ); // Filter to override default globalnav: globalnav_menu
 }
 
