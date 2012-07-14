@@ -14,16 +14,14 @@ function sandbox_globalnav() {
 	/*
 	if ( $menu = str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0') ) )
 		$menu = '<ul>' . $menu . '</ul>';
-	$menu = '<div id="menu">' . $menu . "</div>\n";
 	echo apply_filters( 'globalnav_menu', $menu ); // Filter to override default globalnav: globalnav_menu
 	*/
 	$menu = wp_nav_menu(array(
 		'theme_location' => 'primary',
-		'container_id' => 'menu',
-		'menu_class' => 'menu_item',
-		'menu_id' => 'menu_item',
+		'container' => null,
 		'echo' => false
 	));
+	$menu = '<div id="menu">' . $menu . "</div>\n";
 	echo apply_filters( 'globalnav_menu', $menu ); // Filter to override default globalnav: globalnav_menu
 }
 
@@ -514,6 +512,7 @@ load_theme_textdomain('sandbox');
 
 // Runs our code at the end to check that everything needed has loaded
 add_action( 'init', 'sandbox_widgets_init' );
+add_action( 'init', 'sandbox_nav_menu_init' );
 
 // Registers our function to filter default gallery shortcode
 add_filter( 'post_gallery', 'sandbox_gallery', $attr );
