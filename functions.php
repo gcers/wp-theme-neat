@@ -11,9 +11,19 @@ You should have received a copy of the GNU General Public License along with SAN
 
 // Produces a list of pages in the header without whitespace
 function sandbox_globalnav() {
+	/*
 	if ( $menu = str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0') ) )
 		$menu = '<ul>' . $menu . '</ul>';
 	$menu = '<div id="menu">' . $menu . "</div>\n";
+	echo apply_filters( 'globalnav_menu', $menu ); // Filter to override default globalnav: globalnav_menu
+	*/
+	$menu = wp_nav_menu(array(
+		'theme_location' => 'primary',
+		'container_id' => 'menu',
+		'menu_class' => 'menu_item',
+		'menu_id' => 'menu_item',
+		'echo' => false
+	));
 	echo apply_filters( 'globalnav_menu', $menu ); // Filter to override default globalnav: globalnav_menu
 }
 
@@ -488,6 +498,15 @@ function sandbox_widgets_init() {
 	);
 	wp_register_sidebar_widget( 'rss_links', __( 'RSS Links', 'sandbox' ), 'widget_sandbox_rsslinks', $widget_ops );
 	wp_register_widget_control( 'rss_links', __( 'RSS Links', 'sandbox' ), 'widget_sandbox_rsslinks_control' );
+}
+
+function sandbox_nav_menu_init() {
+	if (!function_exists('register_nav_menus'))
+		return;
+
+	register_nav_menus(array(
+		'primary' => __('Primary', 'sandbox')
+	));
 }
 
 // Translate, if applicable
