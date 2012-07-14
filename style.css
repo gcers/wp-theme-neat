@@ -11,11 +11,6 @@ TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns,
 /* Two-column with sidebar on left from the /examples/ folder  */
 @import url('examples/2c-r.css');
 
-* {
-margin:0;
-padding:0;
-}
-
 a {
 text-decoration:none;
 }
@@ -25,6 +20,8 @@ text-decoration:underline;
 }
 
 body {
+margin:0;
+padding:0;
 color: #333;
 line-height:1.67em;
 }
@@ -234,6 +231,11 @@ div#header {
 background:#f1f1f1;
 border-bottom:1px solid #e5e5e5;
 height:77px;
+}
+
+h1#blog-title {
+margin:0;
+padding:0;
 }
 
 div#footer {

@@ -4,18 +4,20 @@ DESCRIPTION: Two-column fluid layout with one sidebars right of content
 */
 div#container {
 float:left;
-max-width:1100px;
-min-width:860px;
+max-width:1128px;
+min-width:1000px;
 }
 
 div#content {
-width:70%;
+float:left;
+width:76%;
+padding:0 44px;
 }
 
 div.sidebar {
 float:right;
 overflow:hidden;
-width:28%;
+width:22%;
 }
 
 div#secondary {
