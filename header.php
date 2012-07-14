@@ -20,6 +20,5 @@
 	</div><!--  #header -->
 
 	<div id="access">
-		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
 		<?php sandbox_globalnav() ?>
 	</div><!-- #access -->

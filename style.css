@@ -30,18 +30,11 @@ line-height:1.67em;
 }
 
 /* Just some example content */
-div.skip-link {
-position:absolute;
-right:1em;
-top:1em;
-}
-
 div#menu {
 line-height:39px;
 font-size:14px;
 background:#444;
 margin:0 0 1em 0;
-width:100%;
 }
 
 div#menu ul,div#menu ul ul {
@@ -61,8 +54,6 @@ font-weight:bold;
 div#menu ul a {
 color:white;
 display:block;
-margin-right:1em;
-padding:0.2em 0.5em;
 text-decoration:none;
 }
 
