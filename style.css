@@ -23,7 +23,21 @@ body {
 margin:0;
 padding:0;
 color: #333;
+font-size:13px;
 line-height:1.67em;
+}
+
+h1 {
+font-size:24px;
+}
+
+h1,h2,h3,h4,h5 {
+line-height:24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight:normal;
+color:#222;
 }
 
 /* Just some example content */
@@ -31,7 +45,7 @@ div#menu {
 line-height:39px;
 font-size:14px;
 background:#444;
-margin:0 0 1em 0;
+margin:0 0 14px 0;
 }
 
 div#menu ul,div#menu ul ul {
@@ -50,12 +64,18 @@ font-weight:bold;
 
 div#menu ul a {
 color:white;
-display:block;
-text-decoration:none;
 }
 
 div#menu ul ul ul a {
 font-style:italic;
+}
+
+div#menu ul li {
+margin-right:30px;
+}
+
+div#menu ul li ul li {
+margin-right:0px;
 }
 
 div#menu ul li ul {
@@ -69,10 +89,6 @@ left:auto;
 
 .entry-title,.entry-meta {
 clear:both;
-}
-
-div#container,div#primary {
-margin-top:2em;
 }
 
 form#commentform .form-label {
