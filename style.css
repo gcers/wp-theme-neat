@@ -9,7 +9,17 @@ TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns,
 */
 
 /* Two-column with sidebar on left from the /examples/ folder  */
-@import url('examples/2c-l.css');
+@import url('examples/2c-r.css');
+
+* {
+margin:0;
+padding:0;
+}
+
+body {
+color: #333;
+line-height:1.67em;
+}
 
 /* Just some example content */
 div.skip-link {
@@ -19,9 +29,9 @@ top:1em;
 }
 
 div#menu {
+font-size:14px;
 background:#444;
-height:1.5em;
-margin:1em 0;
+margin:0 0 1em 0;
 width:100%;
 }
 
@@ -200,6 +210,12 @@ list-style:circle;
 
 div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
 float:left;
+}
+
+div#menu,div#footer {
+overflow:hidden;
+clear:both;
+padding:0 44px;
 }
 
 div#header,div#footer {
