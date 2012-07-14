@@ -29,6 +29,7 @@ top:1em;
 }
 
 div#menu {
+line-height:39px;
 font-size:14px;
 background:#444;
 margin:0 0 1em 0;
@@ -43,6 +44,7 @@ padding:0;
 }
 
 div#menu ul a {
+color:white;
 display:block;
 margin-right:1em;
 padding:0.2em 0.5em;
@@ -229,7 +231,12 @@ height:77px;
 }
 
 div#footer {
-background: #333;
+line-height:44px;
+background:#333;
+}
+
+div#footer a {
+color:white;
 }
 
 input#author,input#email,input#url,div.navigation div {
