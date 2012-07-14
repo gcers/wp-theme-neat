@@ -19,7 +19,7 @@ top:1em;
 }
 
 div#menu {
-background:#EEE;
+background:#444;
 height:1.5em;
 margin:1em 0;
 width:100%;
@@ -204,6 +204,16 @@ float:left;
 
 div#header,div#footer {
 text-align:center;
+}
+
+div#header {
+background:#f1f1f1;
+border-bottom:1px solid #e5e5e5;
+height:77px;
+}
+
+div#footer {
+background: #333;
 }
 
 input#author,input#email,input#url,div.navigation div {
