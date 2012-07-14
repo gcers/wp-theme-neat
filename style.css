@@ -12,11 +12,17 @@ TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns,
 @import url('examples/2c-r.css');
 
 a {
+color:#15c;
 text-decoration:none;
 }
 
 a:hover {
+color:#006ac8;
 text-decoration:underline;
+}
+
+a:visited {
+color:#15c;
 }
 
 body {
@@ -239,8 +245,8 @@ clear:both;
 padding:0 44px;
 }
 
-div#header,div#footer {
-text-align:center;
+div#header {
+padding:24px 44px;
 }
 
 div#header {

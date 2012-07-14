@@ -18,7 +18,7 @@ function sandbox_globalnav() {
 	*/
 	$menu = wp_nav_menu(array(
 		'theme_location' => 'primary',
-		'container' => null,
+		'container' => false,
 		'echo' => false
 	));
 	$menu = '<div id="menu">' . $menu . "</div>\n";
