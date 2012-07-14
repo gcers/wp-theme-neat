@@ -246,13 +246,9 @@ padding:0 44px;
 }
 
 div#header {
-padding:12px 44px 20px 44px;
-}
-
-div#header {
 background:#f1f1f1;
+padding:12px 44px 20px 44px;
 border-bottom:1px solid #e5e5e5;
-height:77px;
 }
 
 h1#blog-title {
