@@ -71,23 +71,25 @@ font-weight:bold;
 
 div#menu ul a {
 color:white;
+display:block;
+padding:0 15px;
 }
 
 div#menu ul ul ul a {
 font-style:italic;
 }
 
-div#menu ul li {
-margin-right:30px;
-}
-
-div#menu ul li ul li {
-margin-right:0px;
-}
-
 div#menu ul li ul {
 left:-999em;
 position:absolute;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+-ms-border-bottom-left-radius:5px;
+-ms-border-bottom-right-radius:5px;
+-moz-border-bottom-left-radius:5px;
+-moz-border-bottom-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
 }
 
 div#menu ul li:hover ul {
