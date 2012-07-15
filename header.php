@@ -20,10 +20,10 @@
 			<div id="blog-description"><?php bloginfo('description') ?></div>
 		</div>
 		<div id="header-center" class="header-widget">
-			<?php dynamic_sidebar('header-center') ?>
+			<ul><?php dynamic_sidebar('header-center') ?></ul>
 		</div>
 		<div id="header-right" class="header-widget"s>
-			<?php dynamic_sidebar('header-right') ?>
+			<ul><?php dynamic_sidebar('header-right') ?></ul>
 		</div>
 	</div><!--  #header -->
 
