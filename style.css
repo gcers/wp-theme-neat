@@ -248,6 +248,13 @@ float:left;
 
 div#menu,div#footer {
 clear:both;
+}
+
+div#menu {
+padding:0 44px 0 29px;
+}
+
+div#footer {
 padding:0 44px;
 }
 

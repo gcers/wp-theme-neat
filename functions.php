@@ -468,8 +468,29 @@ function sandbox_widgets_init() {
 		'after_title'    =>   "</h3>\n"
 	);
 
-	// Table for how many? Two? This way, please.
-	register_sidebars( 2, $p );
+	register_sidebar(array_merge($p, array(
+		'name' => 'Primary Sidebar',
+		'id' => 'primary-sidebar',
+		'description' => __('On the left or right of the page.', 'sandbox')
+	)));
+
+	register_sidebar(array_merge($p, array(
+		'name' => 'Header Center',
+		'id' => 'header-center',
+		'description' => __('At the center of the header, to the right of the site logo.', 'sandbox')
+	)));
+
+	register_sidebar(array_merge($p, array(
+		'name' => 'Header Right',
+		'id' => 'header-right',
+		'description' => __('On the right of the header.', 'sandbox')
+	)));
+
+	register_sidebar(array_merge($p, array(
+		'name' => 'Footer Left',
+		'id' => 'footer-left',
+		'description' => __('On the left of the footer.', 'sandbox')
+	)));
 
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(

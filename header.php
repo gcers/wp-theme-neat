@@ -15,8 +15,16 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
-		<div id="blog-description"><?php bloginfo('description') ?></div>
+		<div id="header-left">
+			<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
+			<div id="blog-description"><?php bloginfo('description') ?></div>
+		</div>
+		<div id="header-center">
+			<?php dynamic_sidebar('header-center') ?>
+		</div>
+		<div id="header-right">
+			<?php dynamic_sidebar('header-right') ?>
+		</div>
 	</div><!--  #header -->
 
 	<div id="access">
