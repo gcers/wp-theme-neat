@@ -15,14 +15,14 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-		<div id="header-left">
+		<div id="header-left" class="header-widget">
 			<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
 			<div id="blog-description"><?php bloginfo('description') ?></div>
 		</div>
-		<div id="header-center">
+		<div id="header-center" class="header-widget">
 			<?php dynamic_sidebar('header-center') ?>
 		</div>
-		<div id="header-right">
+		<div id="header-right" class="header-widget"s>
 			<?php dynamic_sidebar('header-right') ?>
 		</div>
 	</div><!--  #header -->

@@ -287,6 +287,21 @@ margin:0;
 padding:0;
 }
 
+.header-widget ul, .footer-widget ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-widget li, .footer-widget li {
+	padding: 0;
+	margin: 0;
+}
+
+.header-widget .widgettitle, .footer-widget .widgettitle {
+	display: none;
+}
+
 .clearfix {
 clear:both;
 }
