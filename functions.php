@@ -458,7 +458,7 @@ function widget_sandbox_rsslinks_control() {
 function widget_sandbox_current_user($args) {
 	$current_user = wp_get_current_user();
 	echo $current_user->display_name;
-	echo get_avatar($current_user->ID, 80);
+	echo get_avatar($current_user->ID, 40);
 }
 
 // Widgets plugin: intializes the plugin after the widgets above have passed snuff
