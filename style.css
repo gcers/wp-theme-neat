@@ -302,6 +302,14 @@ padding:0;
 	display: none;
 }
 
+#header-left, #header-center, #footer-left, #footer-center {
+	float: left;
+}
+
+#header-right, #footer-right {
+	float: right;
+}
+
 .clearfix {
 clear:both;
 }

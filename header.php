@@ -25,6 +25,7 @@
 		<div id="header-right" class="header-widget"s>
 			<ul><?php dynamic_sidebar('header-right') ?></ul>
 		</div>
+		<div class="clearfix"></div>
 	</div><!--  #header -->
 
 	<div id="access">
