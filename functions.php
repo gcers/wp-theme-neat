@@ -455,6 +455,12 @@ function widget_sandbox_rsslinks_control() {
 <?php
 }
 
+function widget_sandbox_current_user($args) {
+	$current_user = wp_get_current_user();
+	echo $current_user->display_name;
+	echo get_avatar($current_user->ID, 80);
+}
+
 // Widgets plugin: intializes the plugin after the widgets above have passed snuff
 function sandbox_widgets_init() {
 	if ( !function_exists('register_sidebars') )
@@ -491,6 +497,14 @@ function sandbox_widgets_init() {
 		'id' => 'footer-left',
 		'description' => __('On the left of the footer.', 'sandbox')
 	)));
+
+	wp_register_sidebar_widget(
+		'current-user', __('Current User', 'sandbox'),
+		'widget_sandbox_current_user', array(
+			'classname' => 'widget_current_user',
+			'description' => __('Show the information of current user.', 'sandbox')
+		)
+	);
 
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(
