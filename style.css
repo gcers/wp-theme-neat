@@ -94,6 +94,10 @@ div#menu ul li:hover ul {
 left:auto;
 }
 
+.sub-menu {
+background:#444;
+}
+
 .entry-title,.entry-meta {
 clear:both;
 }
