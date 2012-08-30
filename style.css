@@ -30,6 +30,7 @@ margin:0;
 padding:0;
 font-size:13px;
 line-height:1.67em;
+font-family: '微软雅黑', '文泉驿正黑', 'Adobe Heiti Std', 'Trebuchet MS', Verdana, Tahoma, sans-serif;
 }
 
 h1 {
@@ -313,4 +314,8 @@ padding:0;
 
 .clearfix {
 clear:both;
+}
+
+div.post {
+    margin-bottom: 3em;
 }
